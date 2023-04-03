@@ -1,22 +1,27 @@
-#IMPORT LIBRARIES
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
 
-#REQUEST WEBPAGE AND STORE IT AS A VARIABLE
-page_to_scrape = requests.get("http://quotes.toscrape.com")
+url = 'https://www.coupons.com/coupons/'
 
-#USE BEAUTIFULSOUP TO PARSE THE HTML AND STORE IT AS A VARIABLE
-soup = BeautifulSoup(page_to_scrape.text, 'html.parser')
+response = requests.get(url)
 
-#FIND ALL THE ITEMS IN THE PAGE WITH A CLASS ATTRIBUTE OF 'TEXT'
-#AND STORE THE LIST AS A VARIABLE
-quotes = soup.findAll('span', attrs={'class':'text'})
+if response.status_code == 200:
+    soup = BeautifulSoup(response.content, 'html.parser')
+    coupon_divs = soup.find_all('div', {'class': 'pod-info'})
+    price = soup.find_all('h2', {'class': 'summary'})
 
-#FIND ALL THE ITEMS IN THE PAGE WITH A CLASS ATTRIBUTE OF 'AUTHOR'
-#AND STORE THE LIST AS A VARIABLE
-authors = soup.findAll('small', attrs={"class":"author"})
+    for coupon in coupon_divs:
+        coupon_title = coupon.find('div', {'class': 'pod-info'}).text.strip()
+        price = coupon.find('h2', {'class': 'summary'}).text.strip()
 
-#LOOP THROUGH BOTH LISTS USING THE 'ZIP' FUNCTION
-#AND PRINT AND FORMAT THE RESULTS
-for quote, author in zip(quotes, authors):
-    print(quote.text + "-" + author.text)
+        # coupon_desc = coupon.find('div', {'class': 'coupon-desc'}).text.strip()
+        # coupon_code = coupon.find('div', {'class': 'coupon-code'}).text.strip()
+        
+        print('Coupon:', coupon_title)
+        print('Price:', price)
+        # print('Description:', coupon_desc)
+        # print('Code:', coupon_code)
+        print('-' * 50)
+else:
+    print('Error:', response.status_code)
+
