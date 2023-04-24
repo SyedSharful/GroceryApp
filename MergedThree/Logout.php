@@ -42,7 +42,7 @@
     <div class="owlstuffbottom">
         <h6> Saveit!&#169; 2020</h6>
     </div>
-    <div class="ghost"> <h6>í ½í±» @Saveit! </h6></div>
+    <div class="ghost"> <h6>ğŸ‘» @Saveit! </h6></div>
 </footer>
 
 
