@@ -1,6 +1,6 @@
 **Application link:** https://web.njit.edu/~klz4/CS490/index.php
 
-**Final Program is in the MergeThree Folder**
+**Final Program is in the MergedThree Folder**
 
 **Background Information:** 
 
