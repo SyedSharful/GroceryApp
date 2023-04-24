@@ -39,10 +39,11 @@
          
         if ($row['Username'] === $uname){
             //Conditional: Check if there is an existing username in the db
-            $errors[] = 'Username already exists!';
-            
-            header('location: Signin.php');
-            return $errors;
+            echo '<script language="javascript">';
+            echo 'alert("Username already exists!");';
+            echo 'window.location.href="Signin.php";';
+            echo '</script>';
+            exit();
         }elseif ($row['Email'] === $email){
             //Conditional: Check if there is an existing email in the db
             echo '<script language="javascript">';
