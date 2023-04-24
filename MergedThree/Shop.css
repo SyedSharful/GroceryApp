@@ -1,0 +1,15 @@
+.scroll-box {
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    height: 100px; /* Set the height of the scroll box */
+}
+
+.item {
+    flex-shrink: 0; /* Prevent items from shrinking */
+    width: 100px; /* Set the width of each item */
+    height: 100%; /* Set the height of each item */
+    border: 1px solid black; /* Add a border for clarity */
+}
