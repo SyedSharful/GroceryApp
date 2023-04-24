@@ -1,4 +1,5 @@
 **Applicationm link:** https://web.njit.edu/~klz4/CS490/index.php
+
 **Background Information:** 
 
 **Testing information for Signing Up:**
@@ -9,11 +10,13 @@ Information that were tested include:
 3. Email: Contains valid email attibutes
 4. Address: Contains valid address attributes
 5. Phone Number: Length and format is correct
+
 **Testing information for cart**
 We have few test present in the checkout phase to validate information being used to purchase. The client receives notifications notifying them what was the error.
 Information that were tested include:
 1. Credit card info size were certain length
 2. CSV size
 3. Date format 
+
 **Testing information for coupon**
 In our coupon tab we have testing for search bar set up to make sure the coupon is present in our database or else client recieves not found notification.
