@@ -10,10 +10,10 @@
         
         //Destroy the session if the user is logged in
         session_destroy();
-        echo "<h2>You have been Logged Out! | <a href='index.php'>Home</a> </h2>";
+        echo "<h2 style='text-align: center;'>You have been Logged Out! | <a href='index.php'>Home</a> </h2>";
     }    
     else {
         //Send them a link that they are not logged in, most likely users will not see this
-        echo "<h2>You are Not Logged In! | <a href='Login.php'>Login</a> </h2>";    
+        echo "<h2 style='text-align: center;'>You are Not Logged In! | <a href='Login.php'>Login</a> </h2>";    
     }      
 ?>
