@@ -40,27 +40,18 @@
                 header("Location: index.php");
                 exit();
             }else{
-                echo"Location: Login.php?error=Invalid username or password";
-                //$error = true;
-                //header()
-                //header("Location: Login.php?error=Incorect Username or password");
+                echo '<script language="javascript">';
+                echo 'alert("Invalid username or password");';
+                echo 'window.location.href="Login.php";';
+                echo '</script>';
                 exit();
             }
         }else{
-           // header("Location: Login.php?error=Incorect Username or password");
-            //echo '<script language="javascript">';
-            echo  'alert("Invalid username or password");';
-           // echo '</script>';
-            //echo '<p class="error">Invalid username or password!</p>';
-            //$error = true;
-            //header("Location: Login.php?error=Incorect Username or password");
-               
-        
-
-            /*echo '<script language="javascript">';
+            echo '<script language="javascript">';
             echo 'alert("Invalid username or password");';
-            echo 'window.location.href="Login.html";';
-            echo '</script>';*/
+            echo 'window.location.href="Login.php";';
+            echo '</script>';
+            exit();
             exit();
         }
     }else{
