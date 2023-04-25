@@ -1,6 +1,7 @@
 **Application link:** https://web.njit.edu/~klz4/CS490/index.php
 
-**Running the Program: To run the application link, you must be at NJIT or use NJIT VPN if off campus. To run the whole program on your own computer, change the connection to the database and code under database.php.**
+**Running the Program:**
+To run the application link, you must be at NJIT or use NJIT VPN if off campus. To run the whole program on your own computer, change the connection to the database and code under database.php.
 
 **Final Program is in the MergedThree Folder**
 
