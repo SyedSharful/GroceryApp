@@ -4,6 +4,8 @@
 To run the application link, you must be at NJIT or use NJIT VPN if off campus. To run the whole program on your own computer, change the connection to the database and code under database.php.
 
 **Final Program is in the MergedThree Folder**
+**We have included images to confirm that we used AI functionalities with Browse AI:"**
+Under BrowseAI1.png and BrowseAI2.png
 
 **Background Information:** 
 
