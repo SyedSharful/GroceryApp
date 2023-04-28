@@ -127,6 +127,12 @@
 <!-- Create the tab content -->
 	<div id="Vegetables" class="tabcontent">
 		<h1 style="text-align: center;">Vegetables</h1>
+   
+     <form id="vege" action="VegeSearch.php" method="get">
+    <input type="text" id="search-input" placeholder="Search..." name="search">
+    <input type="submit" id="search-button" name ="submit">
+    </form>
+    </br>
     <h3>Shoprite</h3>
 		<div class="scroll-box">
          <?php
@@ -144,6 +150,11 @@
 
 	<div id="Dairy Products" class="tabcontent">
 		<h1 style="text-align: center;">Dairy Products</h1>
+    <form id="dairy" action="DairySearch.php" method="get">
+    <input type="text" id="search-input" placeholder="Search..." name="search">
+    <input type="submit" id="search-button" name ="submit">
+    </form>
+    </br>
 		<h3>Shoprite</h3>
     <div class="scroll-box">
          <?php
