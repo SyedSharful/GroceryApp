@@ -47,9 +47,8 @@ form {
     <div class="container">
         <div class = "myNameTop">
             <h2>
-                <a href="index.php" style="font-size:100%">Saveit! &#128241; 
-                </a>
-               
+                Saveit!
+                &#128241;    
             </h2>
         </div>
     <nav>
@@ -77,6 +76,7 @@ form {
 </header>
 
 <!--Connect to the database to check if user has items in their cart-->
+<button onclick="window.location.href='Shop.php'">Back to Shop</button>
 <?php   
 //Add to cart
    if($action=='addcart' && $_SERVER['REQUEST_METHOD']=='POST') {	
@@ -89,7 +89,7 @@ form {
     <div class="owlstuffbottom">
         <h6> Saveit!&#169; 2020</h6>
     </div>
-    <div class="ghost"> <h6>í ½í±» @Saveit! </h6></div>
+    <div class="ghost"> <h6>Ã­Â Â½Ã­Â±Â» @Saveit! </h6></div>
 </footer>
   
     <!-- 
