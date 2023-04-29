@@ -8,12 +8,13 @@
      	// Get the payment, location, and delivery time from the form
      	$location = $_POST['location'];
      	$delivery_time = $_POST['delivery_time'];
+      $day = $_POST['delivery_day'];
       $time = $_POST['time'];
       $finaltotal = $_SESSION['finaltotal'];
-      $currtime = date("Y-m-d H:i:s");
+      $currtime = date("m-d-Y H:i A");
       
       $sent = '';
-      $sent = $delivery_time . $time;
+      $sent = $day . ' ' . $delivery_time . ' ' . $time;
       
       $uname = $_SESSION['username'];
       $orderitem = '';
