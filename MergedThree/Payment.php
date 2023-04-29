@@ -100,6 +100,9 @@
     <label for="zip">Zipcode:</label>
 		<input type="text" name="zip" id="zip" pattern="\d{5,5}" required></br>
 
+    <label for="delivery_date">Delivery Date:</label>
+		<input type="text" name="delivery_day" id="delivery_day" pattern="\d{2}-\d{2}-\d{4}" placeholder="MM-DD-YYYY" required>
+
 		<label for="delivery_time">Delivery Time:</label>
 		<input type="text" name="delivery_time" id="delivery_time" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9])?" placeholder="xx:xx" required>
      
