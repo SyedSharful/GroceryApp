@@ -15,6 +15,7 @@
         $store = $_POST['store'];
         $category = $_POST['food'];
         $tableCheck = false;
+        $quant = false;
         
         if (!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = array();
@@ -67,7 +68,7 @@
         }
         
         // If the item is not already in the cart, add it
-        if (!$item_exists) {
+        if (!$item_exists && $quantity > 0) {
             $item = array(
               'item' => $name,
               'image' => $image,
@@ -78,6 +79,8 @@
               'position' => $position
             );
             $_SESSION['cart'][] = $item;
+        }else{
+            $quant = true;
         }
     }
     
@@ -139,10 +142,12 @@
             </form>";
              echo "<form method='post' action=''>
               <button type='submit' name='remove_all' class='btn btn-danger'>Remove All</button>
-              </form></br>";        
+              </form></br>";    
+                 
         }
-        
-        if($check === false){
+        if($quant === true){
+            echo "<h3>No input, invalid quantity!<h3>";
+        }else if($check === false){
             echo "<h2>There is nothing in your cart, " . "<a href='Shop.php'>Shop Now!</a> </h2>";
         }
         
