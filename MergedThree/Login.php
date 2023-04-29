@@ -25,8 +25,8 @@
     <nav>
         <ul>
             <li> <a href="index.php">Home</a></li>
-            <li> <a href="Coupon.php">Coupon</a></li>
             <li> <a href="Shop.php">Shop</a></li>
+            <li> <a href="Coupon.php">Coupon</a></li>
             <li> <a href="Cart.php">Cart</a> </li>
         </ul>
     </nav>
